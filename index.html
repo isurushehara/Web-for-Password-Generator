@@ -7,7 +7,38 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <header>
+        <!-- Navigation Bar -->
+        <nav>
+            <h1>Few Password Generator</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Hero Section -->
+        <section class="hero">
+            <!-- Left section contain user input -->
+            <div class="left">
+                <h2>Password Genarator</h2>
+                <p>Enter your key characters should include in password.</p>
+                <form id="">
+                    <input type="text" id="name" placeholder="First Name">
+                    <input type="number" id="birthyear" placeholder="Birth Year">
+                    <input type="text" id="symbol" placeholder="Favourite Symbol">
+                    <input type="text" id="hobby" placeholder="Hobby">
+                    <button type="button" onclick="generatePassword()">Genarate Password</button>
+                </form>
+            </div>
+
+            <!-- Right section contain output -->
+            <div class="right">
+                <h2>Genared Passwords</h2>
+                <ul class="output"></ul>
+            </div>
+        </section>
+    </header>
 
     <!-- Import JavaScript File -->
     <script src="function.js"></script>
