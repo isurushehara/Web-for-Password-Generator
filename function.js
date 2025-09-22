@@ -14,13 +14,18 @@ function generatePassword() {
         name = nameInput.replace(/\s+/g, '');
     }
     if (bdayInput) {
-        bday = bdayInput;
+        const year = parseInt(bdayInput, 10);
+        if (year >= 1950 && year <= 2025) {
+            bday = year.toString();
+        } else {
+            bday = "2001";
+        }
     }
         
     if (symbolInput)
         symbol = symbolInput;
     if (hobbyInput)
-        hobby = hobbyInput;
+        hobby = hobbyInput.replace(/\s+/g, '');
 
     // Clear previous outputs
     var outputList = document.querySelector(".output");
