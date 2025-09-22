@@ -1,5 +1,3 @@
-/* Contact page additions. Keep styles light to piggyback on styles.css */
-
 nav {
   width: 71.5vw;
 }
@@ -17,7 +15,7 @@ nav a[aria-current="page"] {
   margin-bottom: 1rem;
 }
 
-/* Reusable card-like lists (copied to match About page look) */
+/* Reusable card-like lists */
 .card-list {
   list-style: none;
   padding: 0;
@@ -137,7 +135,6 @@ nav a[aria-current="page"] {
   line-height: 1.5;
 }
 
-/* Optional: tighten spacing on wider screens */
 @media (min-width: 768px) {
   .contact-form {
     padding: 1.2rem;
