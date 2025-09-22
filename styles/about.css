@@ -1,0 +1,78 @@
+/* About page additions. Keep styles light to piggyback on styles.css */
+
+nav {
+    width: 71.5vw;
+}
+/* Highlight active nav item */
+nav a.active,
+nav a[aria-current="page"] {
+  color: #a855f7;
+}
+
+/* About intro paragraph */
+.about-intro {
+  font-size: 0.9rem;
+  color: #ddd;
+  margin-bottom: 1rem;
+}
+
+/* Reusable card-like lists */
+.card-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}
+
+.card-list li {
+  background: rgba(255,255,255,0.08);
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 0.7rem 1rem;
+  font-size: 14px;
+}
+
+/* Two-column layout on larger screens */
+.two-col {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .two-col {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Ordered steps with boxed items */
+.step-list {
+  list-style: decimal;
+  list-style-position: inside;
+  margin: 0.2rem 0 1rem 0;
+  padding: 0;
+}
+
+.step-list li {
+  background: rgba(255,255,255,0.08);
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 0.6rem 0.8rem;
+  margin-top: 0.5rem;
+  font-size: 13px;
+}
+
+/* Subhead inside the right column */
+.subhead {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ddd;
+  margin: 1rem 0 0.4rem;
+}
+
+/* Small note text */
+.note {
+  margin-top: 0.8rem;
+  color: #bbb;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
