@@ -21,9 +21,11 @@ function generatePassword() {
             bday = "2001";
         }
     }
-        
-    if (symbolInput)
+    if (symbolInput && /^[^a-zA-Z0-9\s]+$/.test(symbolInput))
         symbol = symbolInput;
+    else
+        symbol = "#";
+
     if (hobbyInput)
         hobby = hobbyInput.replace(/\s+/g, '');
 
