@@ -113,9 +113,6 @@ Important: The shuffle uses Math.random() and Array.sort(), which is not cryptoâ
 - Update the GitHub Issues link in pages/contact.html to your repository:
   https://github.com/isurushehara/few-password-generator/issues
 
-## License
-
-Choose a license (MIT recommended). Add a LICENSE file and reference it here.
 
 ## Contact
 
