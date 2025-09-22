@@ -1,0 +1,145 @@
+/* Contact page additions. Keep styles light to piggyback on styles.css */
+
+nav {
+  width: 71.5vw;
+}
+
+/* Highlight active nav item */
+nav a.active,
+nav a[aria-current="page"] {
+  color: #a855f7;
+}
+
+/* Intro paragraph */
+.contact-intro {
+  font-size: 0.9rem;
+  color: #ddd;
+  margin-bottom: 1rem;
+}
+
+/* Reusable card-like lists (copied to match About page look) */
+.card-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}
+.card-list li {
+  background: rgba(255,255,255,0.08);
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 0.7rem 1rem;
+  font-size: 14px;
+}
+.card-list a {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* Small note text */
+.note {
+  margin-top: 0.8rem;
+  color: #bbb;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+/* Contact form */
+.contact-form {
+  margin-top: 0.5rem;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.contact-form label {
+  font-size: 0.85rem;
+  color: #ddd;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 8px;
+  padding: 0.65rem 0.75rem;
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #999;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #a855f7;
+  outline-offset: 0;
+  border-color: transparent;
+}
+
+/* Actions */
+.form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+  margin-top: 0.4rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.6rem 0.9rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.btn.primary {
+  background: #a855f7;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+.btn.primary:hover {
+  filter: brightness(1.05);
+}
+
+.btn.ghost {
+  background: transparent;
+  color: #ddd;
+  border: 1px solid rgba(255,255,255,0.25);
+}
+
+.btn.ghost:hover {
+  background: rgba(255,255,255,0.06);
+}
+
+.fine-print {
+  margin-top: 0.4rem;
+  color: #bbb;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+/* Optional: tighten spacing on wider screens */
+@media (min-width: 768px) {
+  .contact-form {
+    padding: 1.2rem;
+  }
+}

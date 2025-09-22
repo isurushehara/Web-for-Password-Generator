@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact • Few Password Generator</title>
+  <link rel="stylesheet" href="../styles.css"/>
+  <link rel="stylesheet" href="../styles/contact.css"/>
+</head>
+<body>
+  <header>
+    <!-- Navigation Bar -->
+    <nav>
+      <h1>Few Password Generator</h1>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" aria-current="page" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Contact Content -->
+    <section class="hero">
+      <!-- Left: Contact Options -->
+      <div class="left">
+        <h2>Contact</h2>
+        <p class="contact-intro">
+          Have a question, found a bug, or want to suggest a feature? We’d love to hear from you.
+          This is a client‑side app,  nothing you type here is stored on a server.
+        </p>
+
+        <ul class="card-list">
+          <li>
+            <strong>Email:</strong>
+            <a href="mailto:fewt@password.com">fewt@password.com</a>
+          </li>
+          <li>
+            <strong>GitHub Issues:</strong>
+            <a href="https://github.com/yourname/few-password-generator/issues" target="_blank" rel="noopener">
+              Open an issue on the repo
+            </a>
+          </li>
+          <li>
+            <strong>Privacy:</strong> We don’t collect form submissions. Your email app will open to send the message.
+          </li>
+        </ul>
+
+        <p class="note">
+          Tip: Never include real passwords or sensitive account info in your message.
+        </p>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="right">
+        <h2>Send a message</h2>
+        <!-- Replace hello@example.com with your address -->
+        <form
+          class="contact-form"
+          action="mailto:hello@example.com?subject=Feedback%20on%20Few%20Password%20Generator"
+          method="POST"
+          enctype="text/plain"
+        >
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="Name" type="text" placeholder="Jane Doe" autocomplete="name" required />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="Email" type="email" placeholder="you@example.com" autocomplete="email" required />
+          </div>
+
+          <div class="form-row">
+            <label for="topic">Subject</label>
+            <input id="topic" name="Subject" type="text" placeholder="Feedback, bug, or question" />
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="Message" rows="6" placeholder="Tell us what's up..." required></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Open in Email App</button>
+            <a class="btn ghost" href="mailto:hello@example.com">Email directly</a>
+          </div>
+
+          <p class="fine-print">
+            If the button doesn’t work, email us at
+            <a href="mailto:fewt@password.com">fewt@password.com</a>.
+          </p>
+        </form>
+      </div>
+    </section>
+  </header>
+</body>
+</html>
